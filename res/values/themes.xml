@@ -25,6 +25,9 @@
     <attr name="side_margin" format="reference|dimension" />
     <attr name="wifi_signal_color" format="reference" />
     <attr name="wifi_signal" format="reference" />
+				<!-- Testing -->
+    <attr name="colorAccent" format="reference" />
+    <attr name="accentTheme" format="reference" />
 
     <style name="SetupWizardDisableAppStartingTheme">
         <!-- Theme to disable the app starting window. The actual theme of the activity needs to
@@ -86,7 +89,13 @@
          layouts against a remote context using our local theme colors. Due to the implementation
          details of Theme, we can't reference any local resources and MUST instead use the values
          directly. So use #ff263238 instead of @color/theme_primary and so on. -->
-    <style name="Theme.SettingsBase" parent="@android:style/Theme.Material.Settings" />
+    <style name="Theme.SettingsBase" parent="@android:style/Theme.Material.Settings">
+        <item name="accentTheme">@style/accentTheme</item>
+        <item name="android:colorAccent">?attr/colorAccent</item>
+    </style>
+    <style name="accentTheme">
+         <item name="colorAccent">?android:attr/colorAccent</item>
+    </style>
 
     <style name="Theme.Settings" parent="Theme.SettingsBase">
         <item name="@*android:preferenceStyle">@style/Preference</item>
