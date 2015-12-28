@@ -152,6 +152,14 @@ public class PowerMenuActions extends SettingsPreferenceFragment
             mOnTheGoPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_ONTHEGO));
         }
 
+        if (mOnTheGoPref != null) {
+            mOnTheGoPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_ONTHEGO));
+        }
+
+        if (mOnTheGoPref != null) {
+            mOnTheGoPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_ONTHEGO));
+        }
+
         if (mAirplanePref != null) {
             mAirplanePref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_AIRPLANE));
         }
