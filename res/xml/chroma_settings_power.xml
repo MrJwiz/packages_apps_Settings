@@ -51,8 +51,7 @@
         android:summary="@string/onthego_alpha_summary"
         android:dependency="onthego" />
 
-
-     <SwitchPreference
+    <SwitchPreference
             android:key="screenrecord"
             android:title="@string/power_menu_screenrecord_title"
             android:defaultValue="false" />
