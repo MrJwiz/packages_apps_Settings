@@ -171,7 +171,7 @@
     <string name="power_menu_bug_report_title">Bug report</string>
     <string name="power_menu_sound_title">Sound panel</string>
     <string name="power_menu_bug_report_disabled">Bug reporting is disabled in development settings</string>
-    <string name="power_menu_screenrecord_title">Screen record shortcut</string>
+    <string name="power_menu_screenrecord_title">Screen record</string>
 
     <!--Power menu -->
     <string name="power_category">Power menu</string>
