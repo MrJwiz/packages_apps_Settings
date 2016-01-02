@@ -503,4 +503,10 @@
     <string name="dashboard_columns_three">Three</string>
     <string name="transparency_title">Transparency</string>
 
+    <string name="transparency_title">Transparency</string>
+
+   <!-- Navigation bar -->
+   <string name="navigation_bar_category">Navigation bar</string>
+   <string name="navigation_other_category">Options</string>
+
 </resources>
