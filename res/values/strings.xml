@@ -7115,14 +7115,4 @@
     <string name="power_menu_animation_bottom">Bottom</string>
     <string name="power_menu_animation_top">Top</string>
 
-    <!-- Break SystemUI Tuner into two parts -->
-    <string name="quick_settings_title">Quick Settings</string>
-    <string name="quick_settings_summary">Configure quick settings tiles</string>
-    <string name="status_bar_icon_blacklist_title">Status bar icons</string>
-    <string name="status_bar_icon_blacklist_summary">Configure what icons are shown on status bar</string>
-
-    <!-- Media art -->
-    <string name="media_art_title">Media cover art</string>
-    <string name="media_art_summary">Enable media cover art on the lockscreen</string>
-
 </resources>
