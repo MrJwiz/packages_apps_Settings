@@ -52,7 +52,6 @@
                 android:title="@string/dbl_tap_vib_title"
                 android:summary="@string/dbl_tap_vib_summary"
                 android:dependency="camera_double_tap_power_gesture" />
-                android:defaultValue="true" />
 
         <PreferenceScreen
                 android:key="screensaver"

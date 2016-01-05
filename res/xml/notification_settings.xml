@@ -48,12 +48,6 @@
                 android:icon="@*android:drawable/ic_audio_notification_new"
                 android:title="@string/notification_volume_option_title" />
 
-        <!-- Volume Steps -->
-        <PreferenceScreen
-                android:key="volume_steps"
-                android:title="@string/volume_steps_title"
-                android:fragment="com.android.settings.aicp.VolumeSteps" />
-
         <!-- Link Volume Notification -->
         <SwitchPreference
                 android:key="volume_link_notification"
@@ -77,6 +71,12 @@
                 android:key="vibrate_when_ringing"
                 android:title="@string/vibrate_when_ringing_title"
                 android:persistent="false" />
+
+        <!-- Volume Steps -->
+        <PreferenceScreen
+                android:key="volume_steps"
+                android:title="@string/volume_steps_title"
+                android:fragment="com.android.settings.aicp.VolumeSteps" />
 
         <!-- Interruptions -->
         <PreferenceScreen
