@@ -150,8 +150,6 @@ public class AppNotificationSettings extends SettingsPreferenceFragment {
         mPriority.setChecked(mAppRow.priority);
         mPeekable.setChecked(mAppRow.peekable);
         mSensitive.setChecked(mAppRow.sensitive);
-        mShowOnKeyguard.setChecked((mAppRow.keyguard & Notification.SHOW_ALL_NOTI_ON_KEYGUARD) != 0);
-        mShowNoOngoingOnKeyguard.setChecked((mAppRow.keyguard & Notification.SHOW_NO_ONGOING_NOTI_ON_KEYGUARD) != 0);
 
         mBlock.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
             @Override
