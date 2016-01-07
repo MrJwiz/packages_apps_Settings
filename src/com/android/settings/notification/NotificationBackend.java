@@ -46,7 +46,6 @@ public class NotificationBackend {
         row.banned = getNotificationsBanned(row.pkg, row.uid);
         row.priority = getHighPriority(row.pkg, row.uid);
         row.peekable = getPeekable(row.pkg, row.uid);
-        row.keyguard = getShowNotificationForPackageOnKeyguard(row.pkg, row.uid);
         row.sensitive = getSensitive(row.pkg, row.uid);
         return row;
     }
@@ -131,25 +130,6 @@ public class NotificationBackend {
         }
     }
 
-    public int getShowNotificationForPackageOnKeyguard(String pkg, int uid) {
-        try {
-            return sINM.getShowNotificationForPackageOnKeyguard(pkg, uid);
-        } catch (Exception e) {
-            Log.w(TAG, "Error calling NoMan", e);
-            return Notification.SHOW_ALL_NOTI_ON_KEYGUARD;
-        }
-    }
-
-    public boolean setShowNotificationForPackageOnKeyguard(String pkg, int uid, int status) {
-        try {
-            sINM.setShowNotificationForPackageOnKeyguard(pkg, uid, status);
-            return true;
-        } catch (Exception e) {
-            Log.w(TAG, "Error calling NoMan", e);
-            return false;
-        }
-    }
-
     static class Row {
         public String section;
     }
@@ -161,7 +141,6 @@ public class NotificationBackend {
         public CharSequence label;
         public Intent settingsIntent;
         public boolean banned;
-        public int keyguard;
         public boolean priority;
         public boolean peekable;
         public boolean sensitive;

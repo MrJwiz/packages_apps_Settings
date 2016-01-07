@@ -26,28 +26,12 @@
             android:order="1"
             android:persistent="false" />
 
-    <!-- Keyguard options -->
-    <SwitchPreference
-            android:key="show_on_keyguard"
-            android:title="@string/app_notification_show_on_keyguard_title"
-            android:summary="@string/app_notification_show_on_keyguard_summary"
-            android:order="2"
-            android:persistent="false" />
-
-    <SwitchPreference
-            android:key="no_ongoing_on_keyguard"
-            android:title="@string/app_notification_no_ongoing_on_keyguard_title"
-            android:summary="@string/app_notification_no_ongoing_on_keyguard_summary"
-            android:order="3"
-            android:dependency="show_on_keyguard"
-            android:persistent="false" />
-
     <!-- Priority -->
     <SwitchPreference
             android:key="priority"
             android:title="@string/app_notification_priority_title"
             android:summary="@string/app_notification_priority_summary"
-            android:order="4"
+            android:order="2"
             android:persistent="false" />
 
     <!-- Peekable -->
@@ -55,7 +39,7 @@
             android:key="peekable"
             android:title="@string/app_notification_peekable_title"
             android:summary="@string/app_notification_peekable_summary"
-            android:order="5"
+            android:order="3"
             android:persistent="false" />
 
     <!-- Sensitive -->
@@ -63,14 +47,14 @@
             android:key="sensitive"
             android:title="@string/app_notification_sensitive_title"
             android:summary="@string/app_notification_sensitive_summary"
-            android:order="6"
+            android:order="4"
             android:persistent="false" />
 
     <!-- App notification preferences -->
     <Preference
             android:key="app_settings"
             android:title="@string/app_notification_preferences"
-            android:order="7"
+            android:order="5"
             android:persistent="false" />
 
 </PreferenceScreen>
