@@ -523,5 +523,6 @@
     <string name="dashboard_columns_default">One (default)</string>
     <string name="dashboard_columns_two">Two</string>
     <string name="dashboard_columns_three">Three</string>
+    <string name="transparency_title">Transparency</string>
 
 </resources>
