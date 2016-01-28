@@ -49,7 +49,7 @@ public class DashboardContainerView extends ViewGroup {
             mNumColumns = 1;
         }
         if (dashboardColumns == 2) {
-            nNumColumns = 2;
+            mNumColumns = 2;
         }
         if (dashboardColumns == 3) {
             mNumColumns = 3;
